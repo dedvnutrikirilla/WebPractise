@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Angle drawer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="totalContainer">
+        <button id="drawRectangle">Draw Rectangle</button>
+        <button id="drawTriangle">Draw Triangle</button>
+    </div>
+    <style>
+        * {
+            margin: 20px;
+        }
+
+        button {
+            margin-bottom: 50px;
+        }
+    </style>
+    <script>
+        const TC = document.querySelector('#totalContainer');
+        const rectangleButton = document.querySelector('#drawRectangle');
+        const triangleButton = document.querySelector('#drawTriangle');
+
+        function clearElement(elementId) {
+            try {
+                document.querySelector(elementId).remove();
+            } catch {
+                // TODO LIST:
+                //
+                // 1: nothing
+                // 2: nothing
+                // 3: nothing
+            }
+        }
+
+        function clearField() {
+            clearElement('#rectangle');
+            clearElement('#triangle');
+        }
+
+        rectangleButton.addEventListener('click', () => {
+            clearField();
+            const rectangle = document.createElement('div');
+            rectangle.id = 'rectangle';
+            rectangle.style.width = '200px';
+            rectangle.style.height = '150px';
+            rectangle.style.backgroundColor = '#442121';
+            TC.appendChild(rectangle);
+        });
+
+        triangleButton.addEventListener('click', () => {
+            clearField();
+            const triangle = document.createElement('div');
+            triangle.id = 'triangle';
+            triangle.style.width = '0';
+            triangle.style.height = '0';
+            triangle.style.borderBottom = '150px solid #329875';
+            triangle.style.borderLeft= '100px solid transparent';
+            triangle.style.borderRight= '100px solid transparent';
+            TC.appendChild(triangle);
+        });
+    </script>
+</body>
+</html>

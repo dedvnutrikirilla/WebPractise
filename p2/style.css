@@ -1,0 +1,492 @@
+body, body *{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+header{
+    height:100px;
+    padding: 30px;
+    cursor: default;
+}
+
+header > *, nav > *{
+    display:inline-block;
+}
+
+nav{
+    position: absolute;
+    left: 35%;
+}
+
+#logo{
+    width: 110px;
+}
+
+.nawItem{
+    width: 75px;
+    text-align: center;
+    margin: 0 30px;
+    color: #444444;
+    font-weight: bold;
+}
+
+nav input {
+    display: none;
+}
+
+input:checked + .nawItem, .nawItem:hover{
+    filter: brightness(30%);
+    text-shadow: #d0d0d0 0.75px 0.75px;
+}
+
+.nawItem img{
+    margin-bottom: 5px;
+}
+
+.delimiter{
+    width: 0;
+    height: 70px;
+    position: absolute;
+    top:20%;
+    border-left: 3px solid #a3a3a3;
+}
+
+#upload{
+    height: 20px;
+    width: 100px;
+    padding: 10px;
+    background-color: #267e9e;
+    color: #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    right: 10%;
+    top: 60px;
+}
+
+#upload img{
+    height: 80%;
+    width: 20px;
+    margin-left: 5px;
+}
+
+#personaContainer{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background-image: url("images/ab1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#personaBlur, #blur{
+    height: 100%;
+    width: 25%;
+}
+
+#personaBlur{
+    position: relative;
+    left: 75%;
+    background-color: #444444ee;
+    color: #ffffff;
+    cursor: default;
+}
+
+#blur{
+    position: absolute;
+    right: 0;
+    background-color: #00000000;
+    filter: blur(10px);
+}
+
+#userChecked{
+    position: relative;
+    left: 30px;
+    top: 25px;
+    width: 25px;
+}
+
+#userChecked .checkmark{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 10px;
+    height: 5px;
+    border: solid #66ff00;
+    border-width: 0 0 2px 2px;
+    transform: rotate(-45deg);
+}
+
+#personaBlur .cross{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 30px;
+    border-bottom: 3px solid #ffffff;
+    transform: rotate(-45deg);
+}
+
+#personaBlur .cross::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    border-bottom: 3px solid #ffffff;
+    transform: rotate(90deg);
+}
+
+#personaAbout{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 70%;
+    text-align: center;
+}
+
+#personaAbout p{
+    margin: 10px 0;
+    font-size: 0.8em;
+    color: #cacaca;
+}
+
+#personaAbout p:first-of-type{
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.roundImg{
+    width: 55%;
+    max-width: 250px;
+    border: 1px solid #ffffff;
+    border-radius: 100%;
+}
+
+#personaBlurBottom{
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    width: 80%;
+    height: 40%;
+    color: #c3c3c3;
+    border-top: 2px solid #ffffff;
+    padding-top: 10px;
+}
+
+#personaImagesContainer{
+    display: grid;
+    margin: 10% 5% 0 5%;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 3.3%;
+}
+
+#contribute{
+    position: absolute;
+    left: 15px;
+    top: 15px
+}
+
+#contribute #plus{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 90px;
+    background-color: #c3c3c3;
+    color: #444444;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#sliders{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+#sliders *{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+#sliders *:hover{
+    color: #ffffff;
+}
+
+#personaCenter{
+    position: absolute;
+    color: #ffffff;
+    text-shadow: #444444 4px 4px 3px, #444444 -4px -4px 3px;
+    top: 25%;
+    left: 15%;
+}
+
+#personaCenter h2{
+    font-size: 2.9em;
+}
+
+#personaCenterAbout > *{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#personaCenterAbout > div{
+    width: 5px;
+    height: 5px;
+    border: 1px solid #444444;
+    background-color: #444444;
+    border-radius: 60px;
+}
+
+#personaCenterAbout{
+    line-height: 80px;
+    text-align: center;
+}
+
+#personaCenterAbout .roundImg{
+    width: 40px;
+    margin-right: 20px;
+}
+
+#like img{
+    background-color: #ff583a;
+    border-color: #ff583a;
+}
+
+#personaCenter .line{
+    width:150px;
+    border-bottom: 3px solid #818181;
+}
+
+#like, #comment{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    line-height: 80px;
+    height: 80px;
+}
+
+#like img, #comment img{
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+}
+
+#mainContainer{
+    width: 75%;
+    background-color: #cacaca;
+    display: inline-block;
+}
+
+#mainTopBar{
+    height: 100px;
+    margin: 0 20px;
+}
+
+#mainTopSelectContainer{
+    width: 180px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    top: -25px;
+    left: calc(100% - 200px);
+}
+
+#mainTopSelect{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    cursor: inherit;
+    text-align: right;
+    background-color: #cacaca;
+    color: #444444;
+    font-size: 1.3em;
+}
+
+#mainTopSelectContainer::before{
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #444444;
+    position: relative;
+    left: 25px;
+    top: 10px;
+    display: inline;
+}
+
+#contentCount{
+    height: 50px;
+}
+
+#contentCount div{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    top: 0;
+    left: 10px;
+    margin-right: 30px;
+}
+
+#contentCount div span{
+    margin-left: 10px;
+    color: #444444;
+}
+
+#contentCount img{
+    vertical-align: middle;
+    width: 35px;
+}
+
+#contentCount .line{
+    width: 0;
+    top: 20px;
+    border-right: 2px solid #959595;
+}
+
+#mainPictures{
+    display: grid;
+    grid-template-columns: [first] 45% [second] 45% [secondEnd];
+    column-gap: 10%;
+    row-gap: 5vh;
+    padding-top: 5vh;
+    margin: 0 20px;
+    border-top: 2px solid #959595;
+}
+
+#mainPictures .picture{
+    height: 100%;
+}
+
+#mainPictures .post{
+    padding: 5px;
+    position: relative;
+    background-color: #ffffff;
+}
+
+#mainPictures .like, #mainPictures .comment,  #mainPictures .avatar{
+    position: absolute;
+    top: 20px;
+    width: 20px;
+}
+
+#mainPictures .capture, #mainPictures .likeCount, #mainPictures .commentCount{
+    position: absolute;
+    top: 23px;
+    color: #ffffff;
+    text-shadow: #000000 1px 1px, #000000 -1px -1px;
+}
+
+#mainPictures .capture{
+    font-style: italic;
+    font-size: 1.5em;
+    top: calc(100% - 50px);
+    left: 20px;
+}
+
+#mainPictures .like{
+    left: 20px;
+}
+
+#mainPictures .likeCount{
+    left: 45px;
+}
+
+#mainPictures .comment{
+    left: 90px;
+}
+
+#mainPictures .commentCount{
+    left: 115px;
+}
+
+#mainPictures .avatar{
+    right: 30px;
+    top: 25px;
+    width: 30px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
+
+#mainPictures .post:nth-child(2n + 1)::after{
+    content: "";
+    position: absolute;
+    top: 10%;
+    right: -20px;
+    border-left: 20px solid #ffffff;
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+}
+
+#mainPictures .post:nth-child(2n)::before{
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    left: -20px;
+    border-right: 20px solid #ffffff;
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+}
+
+#mainUsers{
+    display: inline-block;
+    position:absolute;
+    width: 25%;
+    height: 100%;
+    border-left: 2px solid #959595;
+}
+
+#mainUsersSelect{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    padding: 35px 25px;
+    border: none;
+    border-bottom: 2px solid #a3a3a3;
+    cursor: inherit;
+    text-align: right;
+    color: #444444;
+    font-size: 1.6em;
+}
+    
+#mainUserslandscape::before{
+    content: "";
+    top: 46px;
+    left: 15px; 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #444444;
+    position: absolute;
+}
+
+#mainUsersOn{
+    border-bottom: 2px solid #959595;
+}
+
+#mainUsersOn, #mainUsersOff{
+    margin: 0 10px;
+}
+
+#mainUsersOn .user, #mainUsersOff .user{
+    height: 50px;
+    padding: 10px 0;
+}
+
+#mainUsersOn .user img, #mainUsersOff .user img{
+    width: 3vw;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    vertical-align: middle;
+}

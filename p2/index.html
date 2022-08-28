@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="totalContainer">
+        <header>
+            <div id="logo">
+                <img src="images/logo.png">
+            </div>
+            <nav>
+                <input type="checkbox" id="nawAtHome" checked="true" hidden="true" />
+                <div class="nawItem" id="nawHome">
+                    <img src="images/home.png">
+                    <span>HOME</span>
+                </div>
+                <div class="delimiter"></div>
+                <input type="checkbox" id="nawAtBrowse" hidden="true" />
+                <div class="nawItem" id="nawBrowse">
+                    <img src="images/folder.png">
+                    <span>BROWSER</span>
+                </div>
+                <div class="delimiter"></div>
+                <input type="checkbox" id="nawAtNews" hidden="true" />
+                <div class="nawItem" id="nawNews">
+                    <img src="images/newsfeed.png">
+                    <span>NEWSFEED</span>
+                </div>
+                <div class="delimiter"></div>
+                <input type="checkbox" id="nawAtUser" hidden="true" />
+                <div class="nawItem" id="nawUser">
+                    <img src="images/pawn.png">
+                    <span>USERS</span>
+                </div>
+            </nav>
+            <div id="upload">
+                <span>UPLOAD</span>
+                <img src="images/arrowUp.png">
+            </div>
+        </header>
+        <div id="personaContainer">
+            <div id="personaCenter">
+                <h2>Persona Pawn</h2>
+                <div id="personaCenterAbout">
+                    <img class="roundImg" src="images/pawnWhite.png">
+                    <span>by Justin Pervorse</span>
+                    <div class="circle"></div>
+                    <span>25th Jan, 2014</span>
+                </div>
+                <div class="line"></div>
+                <div id="like">
+                    <img class="roundImg" src="images/heart.png">
+                    <span id="likeCount">640</span>
+                </div>
+                <div id="comment">
+                    <img class="roundImg" src="images/comment.png">
+                    <span id="commentCount">302</span>
+                </div>
+            </div>
+
+            <div id="personaBlur">
+                <div id="userChecked">
+                    <img src="images/pawnWhite.png">
+                    <div class="checkmark"></div>
+                </div>
+                <div class="cross"></div>
+                <div id="personaAbout">
+                    <img class="roundImg" src="images/pawnWhite.png">
+                    <p>Persona Pawn</p>
+                    <p>Pawn Pawn Pawn Pawn Pawn Pawn Pawn</p>
+                </div>
+                <div id="personaBlurBottom">
+                    <div id="contribute">
+                        <div id="plus">+</div>
+                        <span>CONTRIBUTE</span>
+                    </div>
+                    <div id="sliders">
+                        <div class="slider" id="slideLeft">&#60</div>
+                        <div class="slider" id="slideRight">&#62</div>
+                    </div>
+                    <div id="personaImagesContainer">
+                        <img src="images/logo.png">
+                        <img src="images/logo.png">
+                        <img src="images/logo.png">
+                        <img src="images/logo.png">
+                        <img src="images/logo.png">
+                        <img src="images/logo.png">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="mainContainer">
+            <div id="mainTopBar">
+                <div id="contentCount">
+                    <div id="photos">
+                        <img src="images/photo.png"/>
+                        <span>524</span>
+                    </div>
+                    <div class="line"></div>
+                    <div id="videos">
+                        <img src="images/video.png"/>
+                        <span>102</span>
+                    </div>
+                </div>
+                <div id="mainTopSelectContainer">
+                    <select name="monthSelect" id="mainTopSelect">
+                        <option value="January">January, 2014</option>
+                        <option value="February">February, 2014</option>
+                        <option value="March">March, 2014</option>
+                    </select>
+                </div>
+            </div>
+            <div id="mainPictures">
+                <div class="post" id="post1">
+                    <img class="picture" src="images/ab2.jpg">
+                    <img class="like" src="images/heart.png">
+                    <span class="likeCount">180</span>
+                    <img class="comment" src="images/comment.png">
+                    <span class="commentCount">30</span>
+                    <img class="avatar" src="images/pawnWhite.png">
+                    <span class="capture">Image Capture</span>
+                </div>
+                <div class="post"  id="post2">
+                    <img class="picture" src="images/ab3.jpg">
+                    <img class="like" src="images/heartRed.png">
+                    <span class="likeCount">181</span>
+                    <img class="comment" src="images/comment.png">
+                    <span class="commentCount">30</span>
+                    <img class="avatar" src="images/pawnWhite.png">
+                    <span class="capture">Image Capture</span>
+                </div>
+                <div class="post" id="post3">
+                    <img class="picture" src="images/ab4.jpg">
+                    <img class="like" src="images/heart.png">
+                    <span class="likeCount">Like Count</span>
+                    <img class="comment" src="images/comment.png">
+                    <span class="commentCount">30</span>
+                    <img class="avatar" src="images/pawnWhite.png">
+                    <span class="capture">Image Capture</span>
+                </div>
+                <div class="post" id="post4">
+                    <img class="picture" src="images/ab5.jpg">
+                    <img class="like" src="images/heart.png">
+                    <span class="likeCount">180</span>
+                    <img class="comment" src="images/comment.png">
+                    <span class="commentCount">Comment Count</span>
+                    <img class="avatar" src="images/pawnWhite.png">
+                    <span class="capture">Image Capture</span>
+                </div>
+                <div class="post" id="post5">
+                    <img class="picture" src="images/ab6.jpg">
+                    <img class="like" src="images/heart.png">
+                    <span class="likeCount">180</span>
+                    <img class="comment" src="images/comment.png">
+                    <span class="commentCount">30</span>
+                    <img class="avatar" src="images/pawnWhite.png">
+                    <span class="capture">Image Capture</span>
+                </div>
+                <div class="post" id="post6">
+                    <img class="picture" src="images/ab7.jpg">
+                    <img class="like" src="images/heart.png">
+                    <span class="likeCount">180</span>
+                    <img class="comment" src="images/comment.png">
+                    <span class="commentCount">30</span>
+                    <img class="avatar" src="images/pawnWhite.png">
+                    <span class="capture">Image Capture</span>
+                </div>
+            </div>
+        </div>
+        <div id="mainUsers">
+            <div id="mainUserslandscape">
+                <select name="contentSelect" id="mainUsersSelect">
+                    <option value="Lndscapes">Lndscapes</option>
+                    <option value="Rimka">Rimka backgrounds</option>
+                    <option value="Urban">Urban</option>
+                </select>
+            </div>
+            <div id="mainUsersOn">
+                <div class="user" id="user1">
+                    <img src="images/pawn.png"/>
+                    <span>Persona 1</span>
+                </div>
+                <div class="user" id="user2">
+                    <img src="images/pawn.png"/>
+                    <span>Persona 2</span>
+                </div>
+                <div class="user" id="user3">
+                    <img src="images/pawn.png"/>
+                    <span>Persona 3</span>
+                </div>
+            </div>
+            <div id="mainUsersOff">
+                <div class="user" id="user4">
+                    <img src="images/pawn.png"/>
+                    <span>Persona 4</span>
+                </div>
+                <div class="user" id="user5">
+                    <img src="images/pawn.png"/>
+                    <span>Persona 5</span>
+                </div>
+                <div class="user" id="user6">
+                    <img src="images/pawn.png"/>
+                    <span>Persona 6</span>
+                </div>
+                <div class="user" id="user7">
+                    <img src="images/pawn.png"/>
+                    <span>Persona 7</span>
+                </div>
+                <div class="user" id="user8">
+                    <img src="images/pawn.png"/>
+                    <span>Persona 8</span>
+                </div>
+                <div class="user" id="user9">
+                    <img src="images/pawn.png"/>
+                    <span>Persona 9</span>
+                </div>
+                <div class="user" id="user10">
+                    <img src="images/pawn.png"/>
+                    <span>Persona 10</span>
+                </div>
+            </div>
+            <div id="mainUsersSearch"></div>
+        </div>
+
+        <footer>
+        </footer>
+    </div>
+</body>
+</html>
